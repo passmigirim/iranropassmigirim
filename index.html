@@ -1,221 +1,27 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="وبسایت رسمی رضا پهلوی، مدافع ایران سکولار و دموکراتیک">
-    <meta property="og:title" content="رضا پهلوی">
-    <meta property="og:description" content="مدافع ایران سکولار و دموکراتیک - اکنون زمان تغییر است">
-    <meta property="og:image" content="https://jewishjournal.com/wp-content/uploads/2024/02/cov-reza-pahlavi-portrait.jpg">
-    <meta property="og:url" content="https://www.rezapahlavi.org/">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon: Lion and Sun -->
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/f/f8/Lion_and_the_Sun.svg" type="image/svg+xml">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Lion_and_the_Sun.svg/32px-Lion_and_the_Sun.svg.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Lion_and_the_Sun.svg/180px-Lion_and_the_Sun.svg.png">
-
-    <title>رضا پهلوی</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#0A1F44',
-                        accent: '#C39953',
-                        neutral: '#F8FAFC',
-                        danger: '#9B1C31',
-                        'dark-bg': '#0f172a',
-                        'dark-text': '#e2e8f0',
-                        'dark-card': '#1e293b',
-                    },
-                    fontFamily: {
-                        persian: ['Vazirmatn', 'sans-serif'],
-                        english: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
-
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Vazirmatn', system-ui, sans-serif; }
-        .english-text { font-family: 'Inter', system-ui, sans-serif; direction: ltr; }
-        .hero-bg {
-            background: linear-gradient(to bottom, rgba(10,31,68,0.88), rgba(0,0,50,0.92)),
-                        url('https://jewishjournal.com/wp-content/uploads/2024/02/cov-reza-pahlavi-portrait.jpg') center/cover;
-            background-blend-mode: multiply;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>سایت خفن پارسا</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #222;
+    }
+    p {
+      color: #555;
+    }
+  </style>
 </head>
-<body class="bg-white dark:bg-dark-bg text-primary dark:text-dark-text transition-colors duration-300">
+<body>
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-primary dark:bg-gray-900 text-white shadow-lg">
-        <div class="container mx-auto px-6 py-5 flex items-center justify-between">
-            <a href="/" class="text-3xl font-bold tracking-tight">رضا پهلوی</a>
-            <nav class="hidden md:flex space-x-8 space-x-reverse text-lg">
-                <a href="/" class="hover:text-accent transition">خانه</a>
-                <a href="/statements.html" class="hover:text-accent transition">بیانیه‌ها</a>
-                <a href="/news.html" class="hover:text-accent transition">در رسانه‌ها</a>
-                <a href="#conversation" class="hover:text-accent transition">گفت‌وگو</a>
-                <a href="/about.html" class="hover:text-accent transition">درباره</a>
-                <a href="/prosperity.html" class="hover:text-accent transition">پروژه شکوفایی</a>
-                <a href="/contact.html" class="hover:text-accent transition">تماس</a>
-            </nav>
-            <div class="flex items-center space-x-5 space-x-reverse">
-                <button id="theme-toggle" class="text-2xl focus:outline-none hover:text-accent">🌙</button>
-                <button id="lang-toggle" class="text-base font-medium hover:text-accent">EN</button>
-                <a href="https://x.com/PahlaviReza" aria-label="X">X</a>
-                <a href="https://instagram.com/rezapahlavi" aria-label="Instagram">IG</a>
-            </div>
-        </div>
-    </header>
+  <h1>سایت خفن پارسا</h1>
+  <p>به سایت من خوش آمدید</p>
 
-    <!-- Hero -->
-    <section class="hero-bg relative h-screen flex items-center justify-center text-white overflow-hidden">
-        <div class="container mx-auto px-6 text-center z-10" data-aos="fade-up" data-aos-duration="1200">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-5 leading-tight">رضا پهلوی، مدافع ایران سکولار و دموکراتیک</h1>
-            <p class="text-2xl english-text mb-8 opacity-90">Advocate for a Secular Democratic Iran</p>
-            <blockquote class="text-xl italic mb-10 max-w-3xl mx-auto opacity-90">«تا زمانی که ایران دارای حکومتی ملی، دموکراتیک و منتخب مردم نباشد، آرام نخواهم گرفت.»</blockquote>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="#conversation" class="bg-accent text-primary px-10 py-5 rounded-xl font-bold text-lg hover:bg-yellow-600 transition shadow-lg">به گفت‌وگو بپیوندید</a>
-                <a href="https://x.com/PahlaviReza" class="bg-danger text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-red-800 transition shadow-lg">ایران را پس می‌گیریم</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Statements – Updated with real recent content -->
-    <section class="py-20 bg-neutral dark:bg-dark-card">
-        <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-16 text-center" data-aos="fade-up">پیام‌های اخیر</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700" data-aos="fade-up">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">۱۴۰۴/۱۰/۱۳</p>
-                    <h3 class="text-2xl font-bold mb-5">پیام به مناسبت خیزش سراسری</h3>
-                    <p class="mb-6 text-gray-700 dark:text-gray-300">هم‌میهنان شریف و شجاعم، شما در حال تاریخ‌سازی هستید... دلاورانی که به دست این رژیم به قتل رسیده‌اند، قهرمانان راستین این سرزمین‌اند. پیروزی از آن ماست.</p>
-                    <a href="https://x.com/PahlaviReza/status/2006930950589132828" class="text-accent hover:underline font-medium">مشاهده کامل →</a>
-                </div>
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700" data-aos="fade-up" data-aos-delay="150">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">۱۴۰۴/۱۰/۱۳</p>
-                    <h3 class="text-2xl font-bold mb-5">تشکر از پرزیدنت ترامپ</h3>
-                    <p class="mb-6 text-gray-700 dark:text-gray-300">هشدار شما به سرکردگان جنایتکار جمهوری اسلامی به ملت ایران قدرت و امید بیشتری می‌دهد... من برنامه‌ای روشن برای گذار باثبات دارم.</p>
-                    <a href="https://x.com/PahlaviReza/status/2007139691494084909" class="text-accent hover:underline font-medium">مشاهده کامل →</a>
-                </div>
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700" data-aos="fade-up" data-aos-delay="300">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">۱۴۰۴/۱۰/۱۲</p>
-                    <h3 class="text-2xl font-bold mb-5">پیام سال نو و حمایت از اعتراضات</h3>
-                    <p class="mb-6 text-gray-700 dark:text-gray-300">جمهوری اسلامی تلاش کرد شما را خانه‌نشین کند، اما شما شجاعانه در خیابان‌ها ایستادید... پیروزی از آن ماست.</p>
-                    <a href="https://x.com/PahlaviReza/status/2006583342389461300" class="text-accent hover:underline font-medium">مشاهده کامل →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- In the News – placeholder; update with real links when needed -->
-    <section class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-16 text-center" data-aos="fade-up">در رسانه‌ها</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all" data-aos="fade-up">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">۱۴۰۴/۱۰/۱۲</p>
-                    <h3 class="text-2xl font-bold mb-5">حمایت از اعتراضات سراسری</h3>
-                    <p class="mb-6">پوشش گسترده رسانه‌های بین‌المللی از پیام‌های اخیر</p>
-                    <a href="https://www.rezapahlavi.org/in-the-news" class="text-accent hover:underline">مشاهده</a>
-                </div>
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="150">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">۱۴۰۴/۱۰/۱۱</p>
-                    <h3 class="text-2xl font-bold mb-5">مصاحبه با رسانه‌های غربی</h3>
-                    <p class="mb-6">بحث در مورد آینده ایران دموکراتیک</p>
-                    <a href="https://www.rezapahlavi.org/in-the-news" class="text-accent hover:underline">مشاهده</a>
-                </div>
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all" data-aos="fade-up" data-aos-delay="300">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">۱۴۰۴/۱۰/۱۰</p>
-                    <h3 class="text-2xl font-bold mb-5">پوشش خبری اتحاد مخالفان</h3>
-                    <p class="mb-6">گزارش از فعالیت‌های اخیر</p>
-                    <a href="https://www.rezapahlavi.org/in-the-news" class="text-accent hover:underline">مشاهده</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join the Conversation -->
-    <section id="conversation" class="py-20 bg-neutral dark:bg-dark-card">
-        <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold mb-16 text-center" data-aos="fade-up">گفت‌وگو با رضا پهلوی</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl" data-aos="fade-up">
-                    <p class="text-xl font-bold mb-4 text-danger">#زن_زندگی_آزادی</p>
-                    <p class="mb-5">حمایت از خیزش سراسری و همبستگی ملی در برابر رژیم</p>
-                </div>
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="150">
-                    <p class="text-xl font-bold mb-4 text-danger">#ایران_را_پس_میگیریم</p>
-                    <p class="mb-5">پیام به معترضان: متحد بمانید، پیروزی نزدیک است</p>
-                </div>
-                <div class="bg-white dark:bg-dark-card p-8 rounded-2xl shadow-xl" data-aos="fade-up" data-aos-delay="300">
-                    <p class="text-xl font-bold mb-4 text-danger">#پهلوی_برمی‌گرده</p>
-                    <p class="mb-5">شعارهای خیابانی و حمایت گسترده مردم</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="py-24 bg-primary text-white text-center">
-        <div class="container mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-5xl font-bold mb-10">اکنون زمان اقدام است</h2>
-            <a href="https://x.com/PahlaviReza" class="bg-accent text-primary px-12 py-6 rounded-xl font-bold text-xl hover:bg-yellow-600 transition shadow-2xl">بپیوندید به حرکت ملی</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-primary dark:bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-2xl mb-6">پاینده ایران</p>
-            <p class="text-base opacity-80">© ۱۴۰۴ رضا پهلوی. همه حقوق محفوظ است.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true });
-
-        // Theme toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
-            themeToggle.textContent = '☀️';
-        }
-        themeToggle.addEventListener('click', () => {
-            html.classList.toggle('dark');
-            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
-            themeToggle.textContent = html.classList.contains('dark') ? '☀️' : '🌙';
-        });
-
-        // Lang toggle (demo)
-        document.getElementById('lang-toggle').addEventListener('click', () => {
-            if (html.lang === 'fa') {
-                html.lang = 'en'; html.dir = 'ltr';
-                document.getElementById('lang-toggle').textContent = 'FA';
-            } else {
-                html.lang = 'fa'; html.dir = 'rtl';
-                document.getElementById('lang-toggle').textContent = 'EN';
-            }
-        });
-    </script>
 </body>
 </html>
